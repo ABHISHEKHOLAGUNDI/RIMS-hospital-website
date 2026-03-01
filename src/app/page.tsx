@@ -83,10 +83,10 @@ function StarRating({ count }: { count: number }) {
         <Star
           key={i}
           className={`w-3.5 h-3.5 sm:w-4 sm:h-4 ${i < Math.floor(count)
-              ? "fill-amber-400 text-amber-400"
-              : i < count
-                ? "fill-amber-400/50 text-amber-400"
-                : "text-slate-300"
+            ? "fill-amber-400 text-amber-400"
+            : i < count
+              ? "fill-amber-400/50 text-amber-400"
+              : "text-slate-300"
             }`}
         />
       ))}
@@ -105,10 +105,11 @@ export default function HomePage() {
           muted
           loop
           playsInline
+          preload="auto"
           className="absolute inset-0 w-full h-full object-cover"
           poster="/videos/hospital-hero-poster.jpg"
         >
-          <source src="/videos/hospital-hero.mp4" type="video/mp4" />
+          <source src="/videos/hospital-hero-optimized.mp4" type="video/mp4" />
         </video>
 
         {/* Dark gradient overlay for readability */}
