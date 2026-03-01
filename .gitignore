@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# gemini
+.gemini/
+
+# original downloaded video (use the copy in public/videos/)
+Hospital Free Stock*
