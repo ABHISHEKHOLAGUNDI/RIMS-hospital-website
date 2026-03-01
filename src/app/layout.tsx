@@ -116,7 +116,7 @@ export default function RootLayout({
   const faqJsonLd = getFaqJsonLd();
 
   return (
-    <html lang="en" dir="ltr">
+    <html lang="en" dir="ltr" suppressHydrationWarning>
       <head>
         {/* JSON-LD Structured Data */}
         <script
